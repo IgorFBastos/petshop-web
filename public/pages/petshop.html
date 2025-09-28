@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petshop - Agendamentos</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1a73e8;
+        }
+        
+        .btn-voltar {
+            display: inline-block;
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #scheduling-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; 
+            max-width: 800px;
+            margin: 0 auto; 
+        }
+
+        .day-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .day-card h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #1a73e8;
+            color: #333;
+            font-size: 1.5em;
+        }
+        
+        .slots-scheduling-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .slot-scheduling {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .slot-scheduling:last-child {
+            border-bottom: none;
+        }
+
+
+        .slot-hour {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #000;
+            min-width: 60px;
+        }
+        
+        .slot-clients {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        
+        .cliente-nome {
+            background-color: #e8f0fe;
+            color: #1a73e8;
+            padding: 6px 12px;
+            border-radius: 15px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <a href="/">
+        <button class="btn-voltar">Voltar</button>
+    </a>
+    
+    <h1>Painel do Petshop - Horários Marcados</h1>
+
+    <div id="scheduling-container" >
+
+        
+    </div>
+
+    <script type="module" src="../js/petshop.js"></script>
+</body>
+</html>
